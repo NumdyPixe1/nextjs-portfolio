@@ -25,7 +25,7 @@ export default function DateTaskBar() {
     return (<>
         <button
             className="     
-  bg-transparent w-30 h-12 hover:bg-white/20  transition-all duration-150 active:bg-white/30  ">
+  bg-transparent w-30 h-12 hover:bg-white/20  transition-all duration-150 active:bg-white/30 fixed right-0">
             <div className=" flex flex-row justify-center ">
                 <p className="text-sm ">{time}</p>
             </div>

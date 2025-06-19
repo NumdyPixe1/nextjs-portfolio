@@ -1,9 +1,12 @@
 "use client";
 import React, { useState, useRef } from "react";
 type propsType = { src: string; title: string; onClose: () => void; }
+import { getAllData } from "@/lib/db";
+import Resume from "./Resume";
 
-export default function PopUp({ src, title, onClose }: propsType) {
+export default async function PopUp({ src, title, onClose }: propsType) {
     //Move Pop up
+    const data = await getAllData();
     const popUpRef = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState({ x: 100, y: 100 });
     const [isDragging, setIsDragging] = useState(false);
@@ -40,9 +43,10 @@ export default function PopUp({ src, title, onClose }: propsType) {
         // ตำแหน่งที่เลื่อนได้ (ตำแหน่งในหน้าจอเท่านั้น)
         setPosition({ x: newX, y: newY });
 
-
+        console.log(winH);
 
     }
+
     const handleMouseUp = () => {
         setIsDragging(false);
     }
@@ -65,11 +69,19 @@ export default function PopUp({ src, title, onClose }: propsType) {
                         <img className="w-4 h-4 object-cover" src={src} alt="" />
                         <p className="pl-3 text-sm">{title}</p>
                     </div>
+
                     {/* Close pop up */}
                     <button onClick={onClose} className=" active:bg-white/30 transition-all duration-150"><img className="w-6 h-full object-cover" src="/icons/icons8-cross-mark-button-96.png" alt="" /></button>
                 </div>
-                <div style={{ backgroundColor: "#ebe8d7" }} className=" mr-1 ml-1 h-93 flex justify-center  items-center"></div>
+                <div style={{ backgroundColor: "#ebe8d7" }} className=" mr-1 ml-1 h-93 flex justify-center  items-center">
+                    {/* Content */}
+
+
+                    <Resume />
+
+                </div>
             </div>
+
 
         </div>
     );
