@@ -4,9 +4,9 @@ type propsType = { src: string; title: string; onClose: () => void; }
 import { getAllData } from "@/lib/db";
 import Resume from "./Resume";
 
-export default async function PopUp({ src, title, onClose }: propsType) {
+export default function PopUp({ src, title, onClose }: propsType) {
     //Move Pop up
-    const data = await getAllData();
+    // const data = await getAllData();
     const popUpRef = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState({ x: 100, y: 100 });
     const [isDragging, setIsDragging] = useState(false);

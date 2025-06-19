@@ -1,10 +1,13 @@
 
 "use client";
-import React, { useState } from "react";
 
 type propsType = { src: string; title: string; onActive: any; isClose: boolean }
 
 export default function ButtonIcon({ src, title, onActive, isClose }: propsType,) {
+
+
+
+
     const handleOnClick = () => {
         onActive();
     }
