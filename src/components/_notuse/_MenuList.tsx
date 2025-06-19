@@ -1,5 +1,5 @@
 
-import NavLink from "@/components/NavLink"
+import NavLink from "@/components/_notuse/_NavLink"
 
 export default function MenuList() {
   return (<>
