@@ -22,18 +22,22 @@ export const ContentData =  [
   {
      key: "resume",
      content: "This is Resume"
+     ,h:100,
+     w:300
   },
   {
  
  key: "contact",
 content: "This is Contact"
-
+  ,h:100,
+     w:300
   },
   {
     
      key: "work",
      content: "This is Work"
-
+  ,h:100,
+     w:300
   },
 ];
 

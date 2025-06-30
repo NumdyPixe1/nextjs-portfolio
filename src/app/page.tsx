@@ -12,7 +12,7 @@ export default function HomePage() {
       </div>
       <div className="taskbar bg-blue-600 w-screen h-12 fixed bottom-0 ">
         <div className=" flex flex-row">
-          <button className="  bg-transparent w-30 h-12 hover:bg-white/20  transition-all duration-150 active:bg-white/30  mr-2"></button>
+          <button className="  bg-green-600  w-30 h-12 hover:bg-white/20  transition-all duration-150 active:bg-white/30  mr-2"></button>
           {/* {activeWindows.includes("resume") && (() => {
             const popUp = Data.find(data => data.key === "resume");
             if (!popUp) return null;

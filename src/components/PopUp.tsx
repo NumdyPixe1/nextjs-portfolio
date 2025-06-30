@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useRef } from "react";
-type propsType = { src: string; title: string; onClose: () => void; }
 import { getAllData } from "@/lib/db";
-import Resume from "./Resume";
+type propsType = { children: React.ReactNode, src: string; title: string; onClose: () => void; }
 
-export default function PopUp({ src, title, onClose }: propsType) {
+export default function PopUp({ children, src, title, onClose }: propsType) {
+    let hightPopUp = 100;
+    let insideHightPopUp = 100 - 7;
     //Move Pop up
     // const data = await getAllData();
     const popUpRef = useRef<HTMLDivElement>(null);
@@ -62,8 +63,8 @@ export default function PopUp({ src, title, onClose }: propsType) {
 
 
     return (
-        <div ref={popUpRef} onMouseDown={handleMouseDown} style={{ position: "absolute", left: `${position.x}px`, top: `${position.y}px`, userSelect: "none" }} className="w-100  ">
-            <div className="rounded-sm w-full  bg-blue-600   h-100">
+        <div ref={popUpRef} onMouseDown={handleMouseDown} style={{ position: "absolute", left: `${position.x}px`, top: `${position.y}px`, userSelect: "none" }} className={`w-100 h-${hightPopUp} bg-blue-600`}>
+            <div className="rounded-sm w-full  bg-blue-600  ">
                 <div className="pl-1 pr-1 h-6  items-center flex flex-row justify-between">
                     <div className="flex flex-row ">
                         <img className="w-4 h-4 object-cover" src={src} alt="" />
@@ -73,16 +74,16 @@ export default function PopUp({ src, title, onClose }: propsType) {
                     {/* Close pop up */}
                     <button onClick={onClose} className=" active:bg-white/30 transition-all duration-150"><img className="w-6 h-full object-cover" src="/icons/icons8-cross-mark-button-96.png" alt="" /></button>
                 </div>
-                <div style={{ backgroundColor: "#ebe8d7" }} className=" mr-1 ml-1 h-93 flex justify-center  items-center">
+                <div style={{ backgroundColor: "#ebe8d7", }} className={` mr-1 ml-1   h-${insideHightPopUp}   flex justify-center  items-center`}>
                     {/* Content */}
 
+                    {children}
 
-                    <Resume />
 
                 </div>
             </div>
 
 
-        </div>
+        </div >
     );
 }

@@ -3,6 +3,9 @@ import { Data } from "@/lib/db"
 import PopUp from "@/components/PopUp";
 import React, { useState } from "react";
 import ButtonIcon from "@/components/ButtonIcon";
+import Resume from "./Resume";
+import Work from "./Work";
+import Contact from "./Contact";
 
 
 export default function ActiveWindows() {
@@ -42,7 +45,9 @@ export default function ActiveWindows() {
                         src={popUp.src}
                         title={popUp.title}
                         onClose={() => handleClose("resume")}
-                    />
+                    >
+                        <Resume />
+                    </PopUp>
                 );
             })()
         }
@@ -55,7 +60,9 @@ export default function ActiveWindows() {
                         src={popUp.src}
                         title={popUp.title}
                         onClose={() => handleClose("work")}
-                    />
+                    >
+                        <Work />
+                    </PopUp>
                 );
             })()
         }
@@ -68,7 +75,8 @@ export default function ActiveWindows() {
                         src={popUp.src}
                         title={popUp.title}
                         onClose={() => handleClose("contact")}
-                    />
+                    > <Contact />
+                    </PopUp>
                 );
             })()
         }
