@@ -12,41 +12,7 @@ export default function HomePage() {
       </div>
       <div className="taskbar bg-blue-600 w-screen h-12 fixed bottom-0 ">
         <div className=" flex flex-row">
-          <button className="  bg-green-600  w-30 h-12 hover:bg-white/20  transition-all duration-150 active:bg-white/30  mr-2"></button>
-          {/* {activeWindows.includes("resume") && (() => {
-            const popUp = Data.find(data => data.key === "resume");
-            if (!popUp) return null;
-            return (
-              <ButtonTaskBar
-                src={popUp.src}
-                title={popUp.title}
-                onClose={() => handleClose("resume")}
-              />
-            );
-          })()}
-          {activeWindows.includes("work") && (() => {
-            const popUp = Data.find(data => data.key === "work");
-            if (!popUp) return null;
-            return (
-              <ButtonTaskBar
-                src={popUp.src}
-                title={popUp.title}
-                onClose={() => handleClose("work")}
-              />
-            );
-          })()}
-
-          {activeWindows.includes("contact") && (() => {
-            const popUp = Data.find(data => data.key === "contact");
-            if (!popUp) return null;
-            return (
-              <ButtonTaskBar
-                src={popUp.src}
-                title={popUp.title}
-                onClose={() => handleClose("contact")}
-              />
-            );
-          })()} */}
+          <button className="  bg-green-600  w-30 h-12 hover:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]  transition-all duration-150 active:shadow-[inset_-12px_-8px_40px_#46464620]  mr-2"></button>
 
           <DateTaskBar />
         </div>

@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.className} ${geistSans.className}`}
+        className={`${geistMono.className} ${geistSans.className} ${fcSoundFont.className}`}
       >
         {children}
       </body>
