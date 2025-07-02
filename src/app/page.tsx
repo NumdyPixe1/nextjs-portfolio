@@ -1,5 +1,5 @@
 
-import ButtonTaskBar from "@/components/ButtonTaskBar";
+// import ButtonTaskBar from "@/components/ButtonTaskBar";
 import DateTaskBar from "@/components/DateTaskBar";
 import ActiveWindows from "@/components/ActiveWindows";
 export default function HomePage() {

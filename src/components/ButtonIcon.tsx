@@ -1,9 +1,9 @@
 
 "use client";
 
-type propsType = { src: string; title: string; onActive: any; isClose: boolean }
+type propsType = { src: string; title: string; onActive: any; }
 
-export default function ButtonIcon({ src, title, onActive, isClose }: propsType,) {
+export default function ButtonIcon({ src, title, onActive }: propsType,) {
 
 
     const handleOnClick = () => {

@@ -32,7 +32,7 @@ export default function ActiveWindows() {
                     src={button.src}
                     title={button.title}
                     onActive={() => handleActive(button.key)}
-                    isClose={false}
+
                 />))
         }
 

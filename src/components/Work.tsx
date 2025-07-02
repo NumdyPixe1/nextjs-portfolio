@@ -1,6 +1,6 @@
 "use client";
 
-import { getAllData } from "@/lib/db";
+// import { getAllData } from "@/lib/db";
 
 export default function Resume() {
     return (

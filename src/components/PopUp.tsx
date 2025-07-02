@@ -4,8 +4,7 @@ import { getAllData } from "@/lib/db";
 type propsType = { children: React.ReactNode, src: string; title: string; onClose: () => void; }
 
 export default function PopUp({ children, src, title, onClose }: propsType) {
-    let hightPopUp = 200;
-    let insideHightPopUp = hightPopUp - 7;
+
     //Move Pop up
     // const data = await getAllData();
     const popUpRef = useRef<HTMLDivElement>(null);
