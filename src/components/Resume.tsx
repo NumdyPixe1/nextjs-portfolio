@@ -42,8 +42,8 @@ export default function Resume() {
                                 <img className="w-6 h-6 object-cover" src="/icons/icons8-grinning-face-96.png" alt="" />
                                 <h1 className="text-lg font-bold   ">About me</h1>
                             </div>
-                            <p className="text-sm">I'm recent graduate with a major in Interactive Design and Game Development. I have a strong passion for playing, learning and developing games
-                                I'm looking for a game development job.</p>
+                            <p className="text-sm">I&rsquo;m recent graduate with a major in Interactive Design and Game Development. I have a strong passion for playing, learning and developing games
+                                I&rsquo;m looking for a game development job.</p>
                         </div>
                         <div className="mb-6">
                             <div className="flex flex-row gap-1  mb-3 pb-1  items-center border-b border-gray-500">
