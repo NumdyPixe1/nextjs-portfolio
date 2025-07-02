@@ -5,16 +5,16 @@ import Link from "next/link";
 export default function Resume() {
     return (
         <div className="w-200 h-121 bg-blue-600">
-            <div className="mr-1 ml-1 mb-1 h-120 overflow-y-scroll">
+            <div className="mr-1 ml-1 mb-1 h-120 bg-white overflow-y-scroll">
 
                 <div className="text-black">
-                    <div style={{ backgroundColor: "#ebe8d7", }} className="flex flex-row gap-5 text-sm pl-3 pt-0.5 pb-0.5"><p>File</p>
+                    <div style={{ backgroundColor: "#ebe8d7", }} className="flex flex-row gap-5 text-sm pl-3 pt-0.5 pb-0.5 border-b border-gray-500"><p>File</p>
                         <p>Edit</p>
                         <p>Format</p>
                         <p>View</p>
                         <p>Help</p>
                     </div>
-                    <div className=" p-3 bg-white">
+                    <div className=" p-3 ">
                         <h1 className="text-2xl font-bold">Numdao Ratchamueangfang</h1>
                         <div className="flex flex-row gap-5 text-sm mb-2">
                             <div className="flex flex-row  gap-1 items-center">
@@ -28,11 +28,11 @@ export default function Resume() {
                             <p>LinkedIn: <Link href="https://www.linkedin.com/in/numdao/" target="_blank" ><u>numdao</u></Link></p>
                         </div>
                         <div className="flex flex-row gap-5 mb-6 ">
-                            <div className="flex flex-row gap-2 items-center bg-rose-300 text-sm">
+                            <div className="flex flex-row gap-2 items-center p-1 bg-rose-300 text-sm">
                                 <img className="w-4 h-4 object-cover" src="/icons/icons8-video-game-96.png" alt="" />
                                 <p>Game developer</p>
                             </div>
-                            <div className="flex flex-row gap-2 items-center bg-amber-300 text-sm">
+                            <div className="flex flex-row gap-2 items-center p-1 bg-amber-300 text-sm">
                                 <img className="w-4 h-4 object-cover" src="/icons/icons8-desktop-computer-96.png" alt="" />
                                 <p>Frontend</p>
                             </div>
@@ -45,6 +45,33 @@ export default function Resume() {
                             <p className="text-sm">I&rsquo;m recent graduate with a major in Interactive Design and Game Development. I have a strong passion for playing, learning and developing games
                                 I&rsquo;m looking for a game development job.</p>
                         </div>
+
+                        <div className="mb-6">
+                            <div className="flex flex-row  mb-3 pb-1 gap-1   items-center border-b border-gray-500">
+                                <img className="w-6 h-6 object-cover" src="/icons/icons8-briefcase-96.png" alt="" />
+                                <h1 className="text-lg font-bold">Experience</h1>
+                            </div>
+                            <div className="mb-4">
+                                <p className="text-sm font-bold">Freelance</p>
+                                <p className="text-sm">3D Artist / 2D Artist</p>
+                                <p className="text-xs text-gray-500">(2022 - Present)</p>
+                                <ul className="text-sm">
+                                    <li>- Create and Sell Graphic Design Assets
+                                    </li>
+                                    <li>- Creating 3D models for Roblox.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="mb-4">
+                                <p className="text-sm font-bold">Digitopolis Co., Ltd.</p>
+                                <p className="text-sm">Game Developer Intern</p>
+                                <p className="text-xs text-gray-500">(January - May 2024)</p>
+                                <ul className="text-sm">
+                                    <li>- Develop a 2D game using Object-Oriented Programming (OOP) principles with Unity and design 2D graphics for use in the game.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <div className="mb-6">
                             <div className="flex flex-row gap-1  mb-3 pb-1  items-center border-b border-gray-500">
                                 <img className="w-6 h-6 object-cover" src="/icons/icons8-graduation-cap-96.png" alt="" />

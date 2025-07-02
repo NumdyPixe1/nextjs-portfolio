@@ -4,8 +4,8 @@ import PopUp from "@/components/PopUp";
 import React, { useState } from "react";
 import ButtonIcon from "@/components/ButtonIcon";
 import Resume from "./Resume";
-import Work from "./Work";
 import Contact from "./Contact";
+import Projects from "./Projects";
 
 
 export default function ActiveWindows() {
@@ -52,16 +52,16 @@ export default function ActiveWindows() {
             })()
         }
         {
-            activeWindows.includes("work") && (() => {
-                const popUp = Data.find(data => data.key === "work");
+            activeWindows.includes("project") && (() => {
+                const popUp = Data.find(data => data.key === "project");
                 if (!popUp) return null;
                 return (
                     <PopUp
                         src={popUp.src}
                         title={popUp.title}
-                        onClose={() => handleClose("work")}
+                        onClose={() => handleClose("project")}
                     >
-                        <Work />
+                        <Projects />
                     </PopUp>
                 );
             })()
