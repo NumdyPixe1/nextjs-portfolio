@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Resume() {
     return (
-        <div className={`w-200 h-121 bg-blue-600`}>
-            <div className={` mr-1 ml-1 mb-1 h-120 overflow-y-scroll`}>
+        <div className="w-200 h-121 bg-blue-600">
+            <div className="mr-1 ml-1 mb-1 h-120 overflow-y-scroll">
 
                 <div className="text-black">
                     <div style={{ backgroundColor: "#ebe8d7", }} className="flex flex-row gap-5 text-sm pl-3 pt-0.5 pb-0.5"><p>File</p>
@@ -42,7 +42,7 @@ export default function Resume() {
                                 <img className="w-6 h-6 object-cover" src="/icons/icons8-grinning-face-96.png" alt="" />
                                 <h1 className="text-lg font-bold   ">About me</h1>
                             </div>
-                            <p className="text-sm">I’m recent graduate with a major in Interactive Design and Game Development. I have a strong passion for playing, learning and developing games
+                            <p className="text-sm">I'm recent graduate with a major in Interactive Design and Game Development. I have a strong passion for playing, learning and developing games
                                 I'm looking for a game development job.</p>
                         </div>
                         <div className="mb-6">
@@ -68,7 +68,7 @@ export default function Resume() {
                         <div className="mb-6">
                             <div className="flex flex-row  mb-3 pb-1 gap-1   items-center border-b border-gray-500">
                                 <img className="w-6 h-6 object-cover" src="/icons/icons8-desktop-computer-96.png" alt="" />
-                                <h1 className="text-lg font-bold  ">Skills</h1>
+                                <h1 className="text-lg font-bold">Skills</h1>
                             </div>
                             <div className="text-sm mb-2 flex flex-row gap-1 items-center">
                                 <img className="w-4 h-4 object-cover" src="/icons/icons8-desktop-computer-96.png" alt="" />

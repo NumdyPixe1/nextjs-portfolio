@@ -1,7 +1,7 @@
 
 "use client";
 
-type propsType = { src: string; title: string; onActive: any; }
+type propsType = { src: string; title: string; onActive: () => void; }
 
 export default function ButtonIcon({ src, title, onActive }: propsType,) {
 
