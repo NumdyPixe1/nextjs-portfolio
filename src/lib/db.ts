@@ -4,15 +4,20 @@ export const Data = [
     src: "/icons/icons8-page-facing-up-96.png",
     key: "resume",
   },
-  {
-    title: "Contact",
-    src: "/icons/icons8-closed-mailbox-with-raised-flag-96.png",
-    key: "contact",
-  },
+  // {
+  //   title: "Contact",
+  //   src: "/icons/icons8-closed-mailbox-with-raised-flag-96.png",
+  //   key: "contact",
+  // },
   {
     title: "Projects",
     src: "/icons/icons8-card-index-dividers-96.png",
     key: "project",
+  }, 
+  {
+    title: "Activities",
+    src: "/icons/icons8-closed-mailbox-with-raised-flag-96.png",
+    key: "contact",
   },
 ];
 export const ProjectData = [
@@ -23,7 +28,9 @@ export const ProjectData = [
     link: "https://github.com/NumdyPixe1/nextjs-portfolio",
     tags: [
       { name: "Next.js", color: "bg-gray-300" },
+      {name: "TypeScript",color: "bg-sky-300" },
       { name: "Tailwind CSS", color: "bg-blue-300" },
+      
     ],
     date: "2025-6-16",
   },
@@ -43,7 +50,9 @@ export const ProjectData = [
     des: "Puzzle game.",
     imgUrl: "icons8-video-game-96.png",
     link: "https://github.com/NumdyPixe1/guess-the-number",
-    tags: [{ name: "Unity", color: "bg-purple-300" }],
+    tags: [{ name: "Unity", color: "bg-purple-300" }, 
+    {name: "C#",color: "bg-indigo-300" },
+],
     date: "2023-4-15",
   },
   {
@@ -62,7 +71,9 @@ export const ProjectData = [
     des: "Student project",
     imgUrl: "icons8-video-game-96.png",
     link: "https://github.com/NumdyPixe1/Pac-man-Halloween-Re-pack",
-    tags: [{ name: "Unity", color: "bg-purple-300" }],
+    tags: [{ name: "Unity", color: "bg-purple-300" },
+          {name: "C#",color: "bg-indigo-300" },
+    ],
     date: "2022-11-1",
   },
 ];
@@ -81,7 +92,7 @@ export const ResumeData = {
   linkedIn: [{ link: "https://www.linkedin.com/in/numdao/", name: "numdao" }],
   role: [{key:1 ,title:"Game developer",color:"bg-rose-300",imgUrl:"icons8-video-game-96.png"},{key:2,title:"Frontend",color:"bg-amber-300",imgUrl:"icons8-desktop-computer-96.png"}],
   skill:[
-    {key:1,title:"Frontend",item:"React.js, Next.js, Tailwind CSS, HTML, CSS",imgUrl:"icons8-desktop-computer-96.png"},
+    {key:1,title:"Frontend",item:"Vue.js(Learning), React.js, Next.js, Tailwind CSS, HTML, CSS",imgUrl:"icons8-desktop-computer-96.png"},
     {key:2,title:"Backend",item:"Node.js(Learning)", imgUrl:"icons8-gear-96.png"},
     {key:3,title:"Programming Languages",item:"C#, Lua, SQL, Typescript, Javascript",imgUrl:"icons8-keyboard-96.png"},
     {key:4,title:"Tools",item:"Sourcetree, Git, Postman",imgUrl:"icons8-save-96.png"},

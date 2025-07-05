@@ -56,21 +56,18 @@ export default function PopUp({ children, src, title, onClose }: propsType) {
     }, [isDragging]);
 
     return (
-        <div ref={popUpRef} onMouseDown={handleMouseDown} style={{ position: "absolute", left: `${position.x}px`, top: `${position.y}px`, userSelect: "none" }} >
-            <div className="rounded-sm w-full  bg-blue-600">
-                <div className="pl-1 pr-1 h-6  items-center flex flex-row justify-between">
+        <div ref={popUpRef} style={{ position: "absolute", left: `${position.x}px`, top: `${position.y}px`, userSelect: "none" }} >
+            <div className="rounded-sm w-full   bg-blue-600 ">
+                <div onMouseDown={handleMouseDown} className="pl-1 pr-1 h-6   items-center flex flex-row justify-between cursor-move">
                     <div className="flex flex-row ">
                         <img className="w-4 h-4 object-cover" src={src} alt="" />
                         <p className="pl-3 text-sm">{title}</p>
                     </div>
 
                     {/* Close pop up */}
-                    <button onClick={onClose} className=" active:bg-white/30 transition-all duration-150"><img className="w-6 h-full object-cover" src="/icons/icons8-cross-mark-button-96.png" alt="" /></button>
+                    <button onClick={onClose} className=" active:bg-white/30 transition-all duration-150 cursor-pointer"><img className=" w-6 h-full object-cover" src="/icons/icons8-cross-mark-button-96.png" alt="" /></button>
                 </div>
-
-
                 {children}
-
             </div>
 
 

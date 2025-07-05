@@ -5,9 +5,8 @@ import { ResumeData } from "@/lib/db";
 
 export default function Resume() {
     return (
-        <div className="w-200 h-121 bg-blue-600">
+        <div className="w-200 h-121 bg-blue-600 ">
             <div className="mr-1 ml-1 mb-1 h-120 bg-white overflow-y-scroll">
-
                 <div className="text-black">
                     <div style={{ backgroundColor: "#ebe8d7", }} className="flex flex-row gap-5 text-sm pl-3 pt-0.5 pb-0.5 border-b border-gray-500"><p>File</p>
                         <p>Edit</p>
@@ -85,7 +84,7 @@ export default function Resume() {
                                 {ResumeData.skill.map((d) => (
                                     <div key={d.key} className="text-sm mb-2 flex flex-row gap-1 items-center">
                                         <img className="w-4 h-4 object-cover" src={`/icons/${d.imgUrl}`} />
-                                        <span className="font-bold">{d.title}</span>
+                                        <span className="font-bold">{d.title}:</span>
                                         {d.item}
                                     </div>
                                 ))}
