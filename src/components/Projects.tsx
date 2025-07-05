@@ -42,18 +42,6 @@ export default function Projects() {
                             ))}
                         </div>
                     </div>
-
                 </div>
             </div ></div >)
 }
-
-{/* <Project link="https://github.com/NumdyPixe1/nextjs-portfolio" title="Portfolio" imgUrl="icons8-page-facing-up-96.png" des="Portfolio website inspired from Window XP theme."
-                                tags={[
-                                    { name: "Next.js", color: "bg-gray-300" },
-                                    { name: "Tailwind CSS", color: "bg-blue-300" },
-                                ]} />
-                            <Project link="https://github.com/NumdyPixe1/deadline" title="Deadline" imgUrl="icons8-page-facing-up-96.png" des="The website calculates the duration from start to end."
-                                tags={[{ name: "React.js", color: "bg-amber-300" },
-                                { name: "Tailwind CSS", color: "bg-blue-300" },
-                                ]}
-                            /> */}

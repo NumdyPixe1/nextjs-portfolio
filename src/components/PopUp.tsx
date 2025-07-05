@@ -5,7 +5,6 @@ type propsType = { children: React.ReactNode, src: string; title: string; onClos
 export default function PopUp({ children, src, title, onClose }: propsType) {
 
     //Move Pop up
-    // const data = await getAllData();
     const popUpRef = useRef<HTMLDivElement>(null);
     const [position, setPosition] = useState({ x: 100, y: 100 });
     const [isDragging, setIsDragging] = useState(false);
@@ -41,9 +40,6 @@ export default function PopUp({ children, src, title, onClose }: propsType) {
 
         // ตำแหน่งที่เลื่อนได้ (ตำแหน่งในหน้าจอเท่านั้น)
         setPosition({ x: newX, y: newY });
-
-        console.log(winH);
-
     }
 
     const handleMouseUp = () => {

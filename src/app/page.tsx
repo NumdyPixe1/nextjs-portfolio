@@ -1,7 +1,7 @@
 
 // import ButtonTaskBar from "@/components/ButtonTaskBar";
 import DateTaskBar from "@/components/DateTaskBar";
-import ActiveWindows from "@/components/ActiveWindows";
+import ActiveWindows from "@/components/ActivePopUp";
 export default function HomePage() {
 
 
@@ -16,7 +16,6 @@ export default function HomePage() {
 
           <DateTaskBar />
         </div>
-
 
         <div></div>
       </div>
