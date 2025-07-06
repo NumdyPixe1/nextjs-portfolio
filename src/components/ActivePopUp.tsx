@@ -4,12 +4,12 @@ import PopUp from "@/components/PopUp";
 import React, { useState } from "react";
 import ButtonIcon from "@/components/ButtonIcon";
 import Resume from "./Resume";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import Projects from "./Projects";
 
 export default function ActiveWindows() {
-    type PopUpKey = "resume" | "project" | "contact";
-    const componentMap: Record<PopUpKey, React.FC> = { "resume": Resume, "contact": Contact, "project": Projects };
+    type PopUpKey = "resume" | "project";
+    const componentMap: Record<PopUpKey, React.FC> = { "resume": Resume, "project": Projects };
 
     const [activePopUp, setActivePopUp] = useState<PopUpKey[]>([]);
 
