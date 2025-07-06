@@ -14,11 +14,11 @@ export const Data = [
     src: "/icons/icons8-card-index-dividers-96.png",
     key: "project",
   }, 
-  {
-    title: "Activities",
-    src: "/icons/icons8-closed-mailbox-with-raised-flag-96.png",
-    key: "contact",
-  },
+  // {
+  //   title: "Activities",
+  //   src: "/icons/icons8-closed-mailbox-with-raised-flag-96.png",
+  //   key: "contact",
+  // },
 ];
 export const ProjectData = [
   {
