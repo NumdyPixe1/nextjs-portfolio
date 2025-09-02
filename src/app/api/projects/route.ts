@@ -1,7 +1,7 @@
 
 import ConnectDB from "@/lib/mongoose";
 import ProjectModel from "@/models/project";
-import { NextResponse,NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 const LoadDB = async () => {
  await ConnectDB();
@@ -10,7 +10,7 @@ const LoadDB = async () => {
 LoadDB();
 
 //GET
-export async function GET(req: NextRequest) {
+export async function GET() {
     const  projects = await ProjectModel.find({})
     return NextResponse.json({projects});
 }
