@@ -20,7 +20,7 @@ export const Data = [
   //   key: "contact",
   // },
 ];
-export const ProjectData = [
+/*export const ProjectData = [
   {
     title: "Portfolio",
     des: "Portfolio website inspired from Window XP theme.",
@@ -76,7 +76,7 @@ export const ProjectData = [
     ],
     date: "2022-11-1",
   },
-];
+];*/
 export const ResumeData = {
   name: "Numdao Ratchamueangfang",
   tel: "0616502297",
@@ -85,8 +85,9 @@ export const ResumeData = {
     {key:1, uni: "Dhurakij Pundit University", date: "(2024 - Present)", fac: "Master of Science, Program in Web Engineering and Mobile Application Development", gpa:"Grade: 4.00" },
     {key:2, uni: "Dhurakij Pundit University", date: "(2020 - 2024)", fac:"Bachelor of Science, Interactive Design and Game Development",gpa:"Grade: 3.79"}],
   exp:[
-    {key:1,loca:"Freelance",role:"3D Artist / 2D Artist", date:"(2022 - Present)", todo:["- Creating 3D models for Roblox.","- Create and Sell Graphic Design Assets"]},
-    {key:2,loca:"Digitopolis Co., Ltd.",role:"Game Developer Intern", date:"(January - May 2024)", todo:[" - Develop a 2D game using Object-Oriented Programming (OOP) principles with Unity and design 2D graphics for use in the game."]} ],
+        {key:1,loca:"Freelance",role:"Front-end (supporting role)", date:"(August 2025 - Present)", todo:["- Connecting to an API using Redux.","- Writing Unit Test"]},
+    {key:2,loca:"Freelance",role:"3D Artist / 2D Artist", date:"(2022 - Present)", todo:["- Creating 3D models for Roblox.","- Create and Sell Graphic Design Assets"]},
+    {key:3,loca:"Digitopolis Co., Ltd.",role:"Game Developer Intern", date:"(January - May 2024)", todo:[" - Develop a 2D game using Object-Oriented Programming (OOP) principles with Unity and design 2D graphics for use in the game."]} ],
   github: [{ link: "https://github.com/NumdyPixe1", name: "NumdyPixe1" }],
   email: [{ link: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=numdao123@gmail.com", name: "numdao123@gmail.com" }],
   linkedIn: [{ link: "https://www.linkedin.com/in/numdao/", name: "numdao" }],
@@ -99,10 +100,3 @@ export const ResumeData = {
     {key:5,title:"Game Engine / 3D Engine",item:"Unity, Roblox Studio, Blender",imgUrl:"icons8-video-game-96.png"},
     {key:6,title:"Languages",item:"Thai (Native), English (A2 Level)",imgUrl:"icons8-speech-balloon-96.png"}]
 };
-
-// export const getAllData = async ()=>{
-//   return  Data;
-// }
-// export const getAllProjectData = async ()=>{
-//   return ProjectData;
-// }

@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
+    "axios": "^1.11.0",
+    "mongoose": "^8.18.0",
     "next": "15.3.3",
-    "nodemailer": "^7.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

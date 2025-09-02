@@ -1,6 +1,7 @@
 import Link from "next/link"
 type propsType = { title: string, des: string, imgUrl: string, link: string, tags: { name: string, color: string }[] }
-export default function Project({ title, des, imgUrl, link, tags }: propsType) {
+
+export default function IconProject({ title, des, imgUrl, link, tags }: propsType) {
     return (
         <div className="w-80 mt-3 mb-3">
             <Link href={link} target="_blank">

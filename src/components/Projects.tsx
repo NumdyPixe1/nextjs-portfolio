@@ -1,12 +1,28 @@
 "use client"
-import Project from "./Project";
-import { ProjectData } from "@/lib/db";
+import IconProject from "./IconProject";
+import axios from "axios";
+import { Suspense, useEffect, useState } from "react"
+import Loading from "./Loading";
 
+type Project = {
+    _id: string;
+    title: string;
+    des: string;
+    imgUrl: string;
+    link: string;
+    tags: { name: string; color: string }[];
+}
 
 export default function Projects() {
-    const sortedProjects = [...ProjectData].sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    );
+    const [projects, setProjects] = useState<Project[]>([]);
+    const fetchProjects = async () => {
+        const res = await axios.get("/api/projects");
+        setProjects(res.data.projects);
+    };
+    useEffect(() => {
+        fetchProjects();
+    }, []);
+
     return (
         <div className={`w-200 h-121 bg-blue-600`}>
             <div className={` mr-1 ml-1 mb-1 bg-white h-120 overflow-y-scroll`}>
@@ -29,18 +45,20 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className=" p-3">
-                        <div className="grid grid-cols-2 gap-2  place-items-center">
-                            {sortedProjects.map((p, index) => (
-                                <Project
-                                    key={index}
-                                    title={p.title}
-                                    des={p.des}
-                                    imgUrl={p.imgUrl}
-                                    link={p.link}
-                                    tags={p.tags}
-                                />
-                            ))}
-                        </div>
+                        {!projects.length ? <Loading /> : (
+                            <div className="grid grid-cols-2 gap-2  place-items-center">
+                                {projects.map((p) => (
+                                    <IconProject
+                                        key={p._id}
+                                        title={p.title}
+                                        des={p.des}
+                                        imgUrl={p.imgUrl}
+                                        link={p.link}
+                                        tags={p.tags}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </div>
             </div ></div >)

@@ -44,7 +44,9 @@ export default function ActiveWindows() {
                     src={popUp.src}
                     onClose={() => handleClose(key)}
                 >
+
                     <Component />
+
                 </PopUp>
             );
         })}
