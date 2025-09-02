@@ -1,7 +1,7 @@
 "use client"
 import IconProject from "./IconProject";
 import axios from "axios";
-import { Suspense, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Loading from "./Loading";
 
 type Project = {
