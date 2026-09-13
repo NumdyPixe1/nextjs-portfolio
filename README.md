@@ -16,6 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Screenshot
+<img width="1917" height="905" alt="Screenshot 2026-09-13 211825" src="https://github.com/user-attachments/assets/c9cada59-ea75-40a6-9d12-778129d11bf9" />
+
  <!-- 
  This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
